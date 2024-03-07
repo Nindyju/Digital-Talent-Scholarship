@@ -1,0 +1,14 @@
+# Statement if
+x = 4
+if x % 2 == 0: # jika sisa bagi x dengan 2 sama dengan 0
+    print("x habis dibagi DUA") # statemen aksi lebih menjorok ke dalam
+# Statement if ... elif ... else
+x = 7
+if x % 2 == 0: # jika sisa bagi x dengan 2 sama dengan 0
+    print("x habis dibagi DUA")
+elif x % 3 == 0: # jika sisa bagi x dengan 3 sama dengan 0
+    print("x habis dibagi TIGA")
+elif x % 5 == 0: # jika sisa bagi x dengan 5 sama dengan 0
+    print("x habis dibagi LIMA")
+else:
+    print("x TIDAK HABIS dibagi DUA, TIGA ataupun LIMA")

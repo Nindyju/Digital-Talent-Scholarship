@@ -1,0 +1,5 @@
+SELECT DISTINCT mp.kode_pelanggan, mp.nama_customer, mp.alamat
+FROM ms_pelanggan mp
+INNER JOIN tr_penjualan tp ON mp.kode_pelanggan = tp.kode_pelanggan
+INNER JOIN ms_produk pd ON tp.kode_produk = pd.kode_produk
+WHERE pd.nama_produk IN ('Kotak Pensil DQLab', 'Flashdisk DQLab 32 GB', 'Sticky Notes DQLab 500 sheets');
